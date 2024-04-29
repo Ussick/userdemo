@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS Users
+(
+    id           INT AUTO_INCREMENT PRIMARY KEY,
+    firstname    VARCHAR(255) NOT NULL,
+    lastname     VARCHAR(255) NOT NULL,
+    email        VARCHAR(255) NOT NULL,
+    birthday     DATE NOT NULL DEFAULT CURRENT_DATE,
+    address      VARCHAR(255),
+    phone_number VARCHAR(255),
+    created_at   TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    update_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
